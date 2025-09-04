@@ -67,3 +67,6 @@ RSpec.configure do |config|
     )
   end
 end
+
+# Load all service mocks
+Dir[Rails.root.join('spec/support/mocks/*.rb')].each { |f| require f }
